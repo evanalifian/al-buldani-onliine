@@ -1,0 +1,17 @@
+{
+  "name": "cnsl.lg/al-buldan_online",
+  "description": "Website portal berita Al-Buldani Online",
+  "type": "project",
+  "authors": [
+    {
+      "name": "evanalifian",
+      "email": "evanalifian@gmal.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AlBuldaniOnline\\": "app"
+    }
+  },
+  "require": {}
+}

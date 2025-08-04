@@ -1,1 +1,6 @@
+# Folders
 /vendor
+/.vscode
+
+# Files
+.composer.lock

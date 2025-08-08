@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="description" content="Website portal berita Al-Buldani Online.">
+  <meta name="author" content="Evan Rafa Radya Alifian, Surya Maulana Akhmad">
   <meta name="generator" content="Astro v5.9.2">
   <title><?= $model['title'] ?></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-  <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <meta name="theme-color" content="#712cf9">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
-  <link href="blog.css" rel="stylesheet">
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -91,7 +82,7 @@
 </head>
 
 <body>
-  <div class="fixed-top bg-body-tertiary">
+  <div class="bg-body-tertiary">
     <header class="py-3 bg-success">
       <div class="container">
         <div class="row flex-nowrap justify-content-between align-items-center">
@@ -113,7 +104,7 @@
                 <path d="M21 21l-5.2-5.2"></path>
               </svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <a href="#" class="btn btn-sm btn-outline-light">Sign up</a>
           </div>
         </div>
       </div>
@@ -125,7 +116,6 @@
           <a class="nav-item nav-link link-body-emphasis" href="#">Profil</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Lembaga Pendidikan</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Blogs</a>
-          <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Galeri</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Hubungi Kami</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Pendaftaran</a>

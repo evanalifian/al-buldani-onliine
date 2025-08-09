@@ -1,6 +1,6 @@
 # 📌 Al-Buldani Admin Panel
 
-Proyek ini adalah aplikasi web berbasis **Laravel 12** dengan **Filament Admin Panel** dan **Tailwind CSS** untuk mempermudah pengelolaan data.  
+Proyek ini adalah aplikasi web berbasis **Laravel 12** dengan **Filament Admin Panel** dan **Tailwind CSS** untuk mempermudah pengelolaan data. 
 Didesain agar mudah dikembangkan, dengan struktur folder yang rapi dan siap untuk kolaborasi tim.
 
 ---
@@ -14,9 +14,7 @@ Pastikan environment kamu memenuhi syarat berikut sebelum menjalankan proyek:
 - **NPM**: ≥ 9.x
 - **MySQL/MariaDB**
 - **Git**
-
 ---
-
 ## 📂 Instalasi
 
 1. **Clone Repository**

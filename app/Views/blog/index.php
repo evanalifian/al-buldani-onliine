@@ -1,7 +1,15 @@
+<div class="container mb-5">
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <h1 class="text-body-emphasis">Blog</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero neque atque nam, commodi accusantium. Doloribus repellat quaerat, accusamus perspiciatis quisquam porro nihil architecto, ut perferendis nostrum, ipsa qui dolorem.
+    </p>
+  </div>
+</div>
 <section class="mb-5 pb-3">
   <div class="row border-bottom mb-4">
     <div class="col-6">
-      <h3>Kabar Pesantren</h3>
+      <h2>Kabar Pesantren</h2>
     </div>
     <div class="col-6 text-end">
       <a href="/blogs/kabar-pesantren">Selengkapnya...</a>
@@ -85,7 +93,7 @@
 <section class="mb-5 pb-3">
   <div class="row border-bottom mb-4">
     <div class="col-6">
-      <h3>Kajian Islami</h3>
+      <h2>Kajian Islami</h2>
     </div>
     <div class="col-6 text-end">
       <a href="/blogs/kajian-islami">Selengkapnya...</a>
@@ -169,7 +177,7 @@
 <section class="mb-5 pb-3">
   <div class="row border-bottom mb-4">
     <div class="col-6">
-      <h3>Cerita Islami</h3>
+      <h2>Cerita Islami</h2>
     </div>
     <div class="col-6 text-end">
       <a href="/blogs/cerita-islami">Selengkapnya...</a>

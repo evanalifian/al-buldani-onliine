@@ -95,8 +95,7 @@
     }
   </style>
 </head>
-
-<body>
+<body class="d-flex flex-column min-vh-100">
   <header>
     <div class="border-bottom lh-1 py-3 bg-success-subtle text-success-emphasis">
       <div class="container">
@@ -105,7 +104,7 @@
             <a class="link-secondary" href="#">Subscribe</a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-body-emphasis fs-4 text-decoration-none" href="#">Al-Budani</a>
+            <a href="/" class="blog-header-logo text-body-emphasis fs-4 text-decoration-none">Al-Budani</a>
           </div>
           <div class="col-4 text-end">
             <a class="link-secondary" href="#" aria-label="Search">
@@ -121,13 +120,13 @@
         </div>
       </div>
     </div>
-    <div class="nav-scroller py-1 mb-3 border-bottom">
+    <div class="nav-scroller py-1 mb-5 border-bottom">
       <div class="container">
         <nav class="nav nav-underline justify-content-between">
-          <a href="#" class="nav-item nav-link link-body-emphasis active">Home</a>
+          <a href="/" class="nav-item nav-link link-body-emphasis active">Home</a>
           <a href="#" class="nav-item nav-link link-body-emphasis">Profil</a>
           <a href="#" class="nav-item nav-link link-body-emphasis">Lembaga Pendidikan</a>
-          <a href="#" class="nav-item nav-link link-body-emphasis">Blogs</a>
+          <a href="/blogs" class="nav-item nav-link link-body-emphasis">Blogs</a>
           <a href="#" class="nav-item nav-link link-body-emphasis">Galeri</a>
           <a href="#" class="nav-item nav-link link-body-emphasis">Hubungi Kami</a>
           <a href="#" class="nav-item nav-link link-body-emphasis">Pendaftaran</a>
@@ -135,3 +134,4 @@
       </div>
     </div>
   </header>
+  <main class="container">

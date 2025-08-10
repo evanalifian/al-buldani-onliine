@@ -5,9 +5,9 @@ namespace AlBuldaniOnline\Core;
 class Router {
     private static array $routes = [];
   
-    public static function add(string $method, string $path, string $controller, string $function) {
+    public static function add(string $method, string $path, string $controller, string $function): void {
       self::$routes[] = [
-        'method' => $method,
+        'method' => strtoupper($method),
         'path' => $path,
         'controller' => $controller,
         'function' => $function

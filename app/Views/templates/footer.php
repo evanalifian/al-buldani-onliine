@@ -1,4 +1,5 @@
-  <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  </main>
+  <footer class="py-5 text-center text-body-secondary bg-body-tertiary mt-auto">
     <p>&copy; 2025 Al-Buldani Online.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -8,13 +8,15 @@ use App\Models\Author;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Filament\Tables\Actions\DeleteAction;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\AuthorResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\AuthorResource\RelationManagers;
-use Filament\Forms\Components\Textarea;
 
 class AuthorResource extends Resource
 {
@@ -47,7 +49,18 @@ class AuthorResource extends Resource
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make()
+                DeleteAction::make()
+                ->before(function ($record, DeleteAction $action) {
+                    if ($record->news()->exists()) {
+                        Notification::make()
+                            ->title('Gagal Menghapus Author')
+                            ->body('Author ini masih memiliki berita terkait. Hapus berita terlebih dahulu.')
+                            ->danger()
+                            ->send();
+
+                        $action->cancel();
+                    }
+                })
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

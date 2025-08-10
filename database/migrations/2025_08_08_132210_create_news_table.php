@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("author_id");
-            $table->foreignId("news_category_id");
+            $table->foreignId("author_id")->constrained('authors')->restrictOnDelete(); 
+            $table->foreignId("news_category_id")->constrained('news_categories')->restrictOnDelete();
             $table->string("title");
             $table->string("slug")->unique();
             $table->string("thumbnail");

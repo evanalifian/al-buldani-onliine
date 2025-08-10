@@ -49,7 +49,7 @@ class NewsResource extends Resource
                 TextColumn::make('newsCategory.title'),
                 TextColumn::make('newsCategory.title'),
                 TextColumn::make('newsCategory.slug'),
-                ImageColumn::make('thumbnail')
+                ImageColumn::make('thumbnail')->square()
             ])
             ->filters([
                 SelectFilter::make('author_id')->relationship('author', 'name')->label("Select Author"),

@@ -12,6 +12,7 @@ use App\Models\NewsCategory;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\NewsCategoryResource\Pages;
@@ -46,6 +47,17 @@ class NewsCategoryResource extends Resource
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make()
+                ->before(function ($record, Tables\Actions\DeleteAction $action) {
+                    if ($record->news()->exists()) {
+                        Notification::make()
+                            ->title('Gagal Menghapus Kategori')
+                            ->body('Kategori ini masih memiliki berita terkait. Hapus berita terlebih dahulu.')
+                            ->danger()
+                            ->send();
+
+                        $action->cancel();
+                    }
+                })
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

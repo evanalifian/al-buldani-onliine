@@ -1,0 +1,1 @@
+<h1 class="">Hello, <?= $model['category'] ?></h1>
